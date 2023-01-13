@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import TransportationsListPage from './components/pages/TransportationsListPage';
+import styled from 'styled-components';
+
+const AppWindow = styled.div`
+    display: flex;
+    box-sizing: border-box;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWindow>
+      <TransportationsListPage />
+    </AppWindow>
   );
 }
 
