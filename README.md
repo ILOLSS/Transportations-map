@@ -1,3 +1,7 @@
+# Transportations Map
+
+It is applaication that bulds and displays on the map the route between the point of departure and the point of delivery. Users can select points in the table on the right side of the screen. The selected points will be highlighted and the route will be displayed on the map on the left side of the screen.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
