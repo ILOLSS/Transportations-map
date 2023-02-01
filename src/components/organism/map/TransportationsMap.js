@@ -27,7 +27,7 @@ function TransportationsMap() {
     return (
         <MapWrap scrollWheelZoom={true}>
             <TileLayer
-            attribution='&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+            attribution='&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <RoutingTransportation />

@@ -10,7 +10,7 @@ import {
 function* fetchRouteTransportationsWorker({ payload }) {
     try {
         yield put(setLoading());
-        const url = `http://router.project-osrm.org/route/v1/driving/${payload.lngFrom},${payload.latFrom};${payload.lngTo},${payload.latTo}?overview=full`;
+        const url = `https://router.project-osrm.org/route/v1/driving/${payload.lngFrom},${payload.latFrom};${payload.lngTo},${payload.latTo}?overview=full`;
         const response = yield fetch(url);
         const data = yield response.json();
         yield put(setRouteTransportations(data));
